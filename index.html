@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Formulario de registro</h1>
+
+<form action="formulario.php" method="get" enctype="multipart/form-data"> 
+        <label for="">
+            Nombre: <input type="text" name="name"required>
+        </label><br><br>
+        <label for="">
+            Apellido: <input type="text" name="apellido"required>
+        </label><br><br>
+        <label for="">
+            edad: <input type="number" name="age">
+        </label><br><br>
+        documento: <input type="number" name="document"required>
+     </label><br><br>
+
+     Fecha de nacimiento:<input type="date" id="fecha" name="fecha" max="2024-11-01" required>
+     <label for="fecha" ></label>
+     <br><br>
+ 
+     Teléfono: <label for="telefono"></label>
+     <input type="number" id="telefono" name="telefono" >
+ 
+     <p> Genero: </p>
+     Femenino: <input type="radio" name="genero" value="femenino"required>
+     </label><br>
+     Masculino: <input type="radio" name="genero" value="masculino">
+     </label><br>
+     Otro: <input type="radio" name="genero" value="otro">
+     </label><br><br>
+
+     color:<br><input type="color" name="color" value="#ff0000" >
+     <label for="color"></label><br><br>
+
+     <p> mecato preferido: </p>
+     chocolate: <input type="checkbox" name="mecato" value="chocolate">
+     </label><br>
+     papas: <input type="checkbox" name="mecato" value="papas">
+     </label><br>
+     gaseosa: <input type="checkbox" name="mecato" value="gaseosa">
+     </label><br>
+     bananas: <input type="checkbox" name="mecato" value="bananas">
+     </label><br><br>
+
+     <label>
+        Imagen:<br>
+        <input type="file" name="imagen" >
+     </label><br><br>
+
+     Ciudad:<label for="ciudad"></label>
+     <select id="ciudad" name="ciudad" >
+           <option value="">Selecciona una ciudad</option>
+            <option value="bogota">Bogotá</option>
+            <option value="medellin">Medellín</option>
+            <option value="cali">Cali</option>
+            <option value="cartagena">Cartagena</option>
+            <option value="barranquilla">Barranquilla</option>
+     </select>
+     <br><br>
+
+     <label>Comentario:<br>
+        <textarea name="comentario" cols="40" rows="10"></textarea>
+     </label><br><br>
+     <button type="sumbit">Enviar</button>
+
+    </form>
+
+</body>
+</html>
